@@ -7,7 +7,7 @@ This is a simple Python implementation of Unigram Tokenization.
     - Repeat these steps until convergence
         - Employ the Viterbi algorithm to find the best tokenization $\mathcal{T}$.
         - Fix the best tokenization $\mathcal{T}$ and maximize likelihood: 
-        $$ P(x) = \prod_{i=1}^{N_{\mathcal{T}}} p(x_i)$$
+        $$P(X) = \prod_{i=1}^{N_{\mathcal{T}}} p(x_i)$$
 4. Shrink the vocabulary $\mathcal{T}$ by a multiplication factor $\alpha$:
     - Calculate the loss if token $x_i$ is replaced with the Viterbi path of token ${x_i}$.
     - Sort by loss
